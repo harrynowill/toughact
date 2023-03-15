@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 :root {
     --font: 'Roboto Mono', monospace;
     --background: #fa655a;
@@ -23,11 +24,25 @@ body{
 
 h1{
     text-align: center;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    font-size: 350%; 
+    font-stretch: condensed; 
+    /* padding-top: 5em; 
+    padding-bottom: 5em;">; */
 }
 
 h2{
     text-align: center;
 }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 
 .container {
     flex: 1 auto;
