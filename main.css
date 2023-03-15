@@ -21,6 +21,14 @@ body{
 
 }
 
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
 .container {
     flex: 1 auto;
     display: flex;
