@@ -25,6 +25,7 @@
 :root {
     --font: 'Roboto Mono', monospace;
     --background-red: #fa655a;
+    --background-05: #2A2421;
     --background-pink: #ffbbf2;
     --background-softpink: #FAA5BA;
     --link-pink: #ffd4fa;
@@ -34,6 +35,7 @@
     --text-blue: #8095f3;
     --text-lightgrey: #d6ced5;
     --text-teal: #62B9EC;
+    --text-red: #F56C8B;
     --color: black;
     --max-width: 50em;
     --max-link-width: 30em;
@@ -146,7 +148,7 @@ footer {
 }
 
 .pastel-pink {
-    background-color: #16d2fc49;
+    background-color: #F56C8B;
     color: var(--link-black);
     border: dashed var(--link-black) 2px;
 }
