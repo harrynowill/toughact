@@ -19,7 +19,7 @@
 <title>Tough Act</title>
 <link rel="stylesheet" href="main.css">
 
-<div class="content" style="color: var(--text-lightgrey); background-color: var(--background-darkgrey);">
+<div class="content" style="background-color: var(--background-red);">
     <h1 id="home" style="max-width: 10em;">TOUGH ACT: FAST MUSIC FOR INSANE PEOPLE</h1>
     <h2 class="subheading">queer aggression
         <br> 🥶
@@ -44,7 +44,7 @@
             </a>
         </div>
         <div class="icon-block">
-            <img class="icon" onclick="show()" style="filter: invert(65%);" src="img/icons/email.svg" alt="email icon">
+            <img class="icon" onclick="show()" style="filter: invert(0%);" src="img/icons/email.svg" alt="email icon">
         </div>
     </div>
     <p id="email-textbox" class="link pastel-pink" style="visibility: collapse;">
@@ -59,24 +59,24 @@
         <br> and the tough act residents association
     </h2>
     <p>saturday march 18th at the white hotel</p>
-    <a class="link dark-grey" href="https://ra.co/events/1644260">😤 Tickets on Resident Advisor 🤠</a>
-    <img src="img/caro/caro1.webp" alt="march event teaser" id="ta006-teaser">
+    <a class="link" href="https://ra.co/events/1644260">😤 Tickets on Resident Advisor 🤠</a>
+    <img src="/img/ta006.webp" alt="tough act 6 poster" id="ta006">
+</div>
 
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-red)0%, var(--background-darkgrey)90%);"></div>
+
+<div class="content" style="color: var(--text-red); background-color: var(--background-darkgrey);">
     <h2>tough act cultural outreach programme
         <br> with the tough act steelworkers division
     </h2>
     <p>the tough act residents association get metallurgical with a dj set on the other side of the peaks
         <br>[saturday march 4th at førge, sheffield]
     </p>
-    <a class="link dark-grey" href="https://ra.co/events/1639306">👩‍🏫 Tickets on Resident Advisor 👨‍🏫</a>
-    </div>
-    
-    <div class="filler" style="height: 10em; background-color: var(--background-darkgrey);"></div>
+    <img src="/img/forge.webp" alt="forge flyer" id="forge-flyer">
 
-<div class="content" style="color: var(--text-red); background-color: var(--background-darkgrey);">
     <h2 id="TA005">tough act #5
         <br> with
-        <span class="block">aya b2b xin <span class="fancy block">(hardcore special)</span>, </span>
+        <span class="block">aya b2b xin <span class="fancy">(hardcore special)</span>, </span>
         <span class="block">quest?onmarq, </span>
         <span class="block">ziúr, </span>
         <br> and the tough act residents association
@@ -272,13 +272,6 @@
             email.style.visibility = "collapse";
         }
     }
-</script>
-
-<script>
-    // pick a random dog from the carousel each time the page is loaded
-    const carousel = document.getElementById("ta006-teaser");
-    var caroNum = Math.floor(Math.random() * 3) + 1;
-    carousel.src = "/img/caro/caro" + caroNum + ".webp";
 </script>
 
 <script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
