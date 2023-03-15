@@ -1,5 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
 
 :root {
     --font: 'Roboto Mono', monospace;
@@ -76,6 +97,10 @@ span.block {
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+
+.fancy {
+    font-family: 'Cinzel', serif;
 }
 
 footer {
