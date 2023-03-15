@@ -26,12 +26,14 @@
     --font: 'Roboto Mono', monospace;
     --background-red: #fa655a;
     --background-pink: #ffbbf2;
+    --background-softpink: #FAA5BA;
     --link-pink: #ffd4fa;
     --background-black: #08080a;
     --background-darkgrey: #1B1711;
     --link-black: #05081A;
     --text-blue: #8095f3;
     --text-lightgrey: #d6ced5;
+    --text-teal: #62B9EC;
     --color: black;
     --max-width: 50em;
     --max-link-width: 30em;
@@ -141,6 +143,12 @@ footer {
     background-color: hsl(0, 0%, 28%);
     color: var(--text-lightgrey);
     border: dashed var(--text-lightgrey) 2px;
+}
+
+.pastel-pink {
+    background-color: #16d2fc49;
+    color: var(--link-black);
+    border: dashed var(--link-black) 2px;
 }
 
 img {
