@@ -19,7 +19,7 @@
 <title>Tough Act</title>
 <link rel="stylesheet" href="main.css">
 
-<div class="content" style="color: var(--text-red); background-color: var(--background-darkgrey);">
+<div class="content" style="color: var(--text-lightgrey); background-color: var(--background-darkgrey);">
     <h1 id="home" style="max-width: 10em;">TOUGH ACT: FAST MUSIC FOR INSANE PEOPLE</h1>
     <h2 class="subheading">queer aggression
         <br> 🥶
@@ -30,36 +30,37 @@
     <div class="link horizontal-container">
         <div class="icon-block">
             <a href="https://www.instagram.com/toughactmcr/" target="_blank">
-                <img class="icon" src="img/icons/instagram.svg" alt="instagram logo"></img>
+                <img class="icon" src="img/icons/instagram.svg" alt="instagram logo">
             </a>
         </div>
         <div class="icon-block">
             <a href="https://t.me/toughact" target="_blank">
-                <img class="icon" style="filter: brightness(0.9) saturate(0.65);" src="img/icons/telegram.svg" alt="telegram logo"></img>
+                <img class="icon" style="filter: brightness(0.9) saturate(0.65);" src="img/icons/telegram.svg" alt="telegram logo">
             </a>
         </div>
         <div class="icon-block">
             <a href="https://www.facebook.com/toughactmcr/" target="_blank">
-                <img class="icon" src="img/icons/facebook.svg" alt="facebook logo"></img>
+                <img class="icon" src="img/icons/facebook.svg" alt="facebook logo">
             </a>
         </div>
         <div class="icon-block">
-            <img class="icon" onclick="show()" style="filter: invert(65%);" src="img/icons/email.svg" alt="email icon"></img>
+            <img class="icon" onclick="show()" style="filter: invert(65%);" src="img/icons/email.svg" alt="email icon">
         </div>
     </div>
     <p id="email-textbox" class="link pastel-pink" style="visibility: collapse;">
         our email is: toughactmcr @ [email service from google]
     </p>
 
-    <h2 id="TA005">tough act #6
+    <h2 id="TA006">tough act #6
         <br> with
-        <span class="block">?? ??????</span>,
-        <span class="block">???</span>,
-        <span class="block">?????? ??????</span>,
+        <span class="block">dj flight</span>,
+        <span class="block">lcy</span>,
+        <span class="block">stolen velour</span>,
         <br> and the tough act residents association
     </h2>
     <p>saturday march 18th at the white hotel</p>
-    <a class="link pastel-pink" href="https://ra.co/events/1644260">😤 Tickets on Resident Advisor 🤠</a>
+    <a class="link dark-grey" href="https://ra.co/events/1644260">😤 Tickets on Resident Advisor 🤠</a>
+    <img src="img/caro/caro1.webp" alt="march event teaser" id="ta006-teaser">
 
     <h2>tough act cultural outreach programme
         <br> with the tough act steelworkers division
@@ -67,8 +68,12 @@
     <p>the tough act residents association get metallurgical with a dj set on the other side of the peaks
         <br>[saturday march 4th at førge, sheffield]
     </p>
-    <a class="link pastel-pink" href="https://ra.co/events/1639306">👩‍🏫 Tickets on Resident Advisor 👨‍🏫</a>
+    <a class="link dark-grey" href="https://ra.co/events/1639306">👩‍🏫 Tickets on Resident Advisor 👨‍🏫</a>
+    </div>
+    
+    <div class="filler" style="height: 10em; background-color: var(--background-darkgrey);"></div>
 
+<div class="content" style="color: var(--text-red); background-color: var(--background-darkgrey);">
     <h2 id="TA005">tough act #5
         <br> with
         <span class="block">aya b2b xin <span class="fancy block">(hardcore special)</span>, </span>
@@ -76,7 +81,7 @@
         <span class="block">ziúr, </span>
         <br> and the tough act residents association
     </h2>
-    <img src="img/jan-headliner.webp" alt="january event flyer" id="ta005-flyer"></img>
+    <img src="img/jan-headliner.webp" alt="january event flyer" id="ta005-flyer">
 </div>
 
 <div class="filler" style="height: 10em; background: linear-gradient(var(--background-darkgrey)10%, var(--background-softpink)100%);"></div>
@@ -89,7 +94,7 @@
         <span class="block">conor thomas <span class="fancy block">(speed degeneracy set)</span>, </span>
         and the tough act residents association
     </h2>
-    <img src="img/oct-full.webp" alt="october event flyer" id="ta004-flyer"></img>
+    <img src="img/oct-full.webp" alt="october event flyer" id="ta004-flyer">
 </div>
 
 <div class="filler" style="height: 10em; background: linear-gradient(var(--background-softpink) 10%, var(--background-darkgrey)100%);"></div>
@@ -118,7 +123,7 @@
     <h2 style="color: var(--text-lightgrey);">tough act jubilee takeover
         <br> with the tough act residents association
     </h2>
-    <img id="yes" src="img/yes-flyer.webp" style="filter: hue-rotate(240deg);" alt="tough act yes takeover flyer"></img>
+    <img id="yes" src="img/yes-flyer.webp" style="filter: hue-rotate(240deg);" alt="tough act yes takeover flyer">
 
     <h2 id="TA002" style="padding-top: 3em;">tough act #2
         <br> with
@@ -267,6 +272,13 @@
             email.style.visibility = "collapse";
         }
     }
+</script>
+
+<script>
+    // pick a random dog from the carousel each time the page is loaded
+    const carousel = document.getElementById("ta006-teaser");
+    var caroNum = Math.floor(Math.random() * 3) + 1;
+    carousel.src = "/img/caro/caro" + caroNum + ".webp";
 </script>
 
 <script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
