@@ -100,6 +100,24 @@ img {
     width: 100%;
 }
 
+.icon {
+    width: 2em;
+}
+
+.icon-block {
+    flex-grow: 1;
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    align-items: stretch;
+}
+
 title {
     font-family: "Open Sans", sans-serif;
     font-weight: 800;
