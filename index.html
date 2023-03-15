@@ -43,7 +43,13 @@
                 <img class="icon" src="img/icons/facebook.svg" alt="facebook logo"></img>
             </a>
         </div>
+        <div class="icon-block">
+            <img class="icon" onclick="show()" style="filter: invert(90%);" src="img/icons/email.svg" alt="email icon"></img>
+        </div>
     </div>
+    <p id="email-textbox" class="link dark-grey" style="visibility: collapse;">
+        hello @ this domain
+    </p>
 
     <h2 id="TA003" class="no-bottom-margin">tough act #3: <s>shame</s> pride special
         <br> with
@@ -212,17 +218,16 @@
     </footer>
 </div>
 
-<!-- <script>
-    lineup = document.getElementById("lineup");
-    flyer = document.getElementById("flyer");
-
-    var date = new Date();
-    var release_date = new Date(2022, 2, 24, 19, 0, 0, 0);
-    if (date > release_date) {
-        // secret lineup information, no peeking!
-        lineup.innerHTML = "kilbourne,";
-        flyer.src = "img/kilbourne.webp";
+<script>
+    // toggles the visibility of the email textbox
+    function show() {
+        var email = document.getElementById("email-textbox");
+        if (email.style.visibility == "collapse") {
+            email.style.visibility = "visible";
+        } else {
+            email.style.visibility = "collapse";
+        }
     }
-</script> -->
+</script>
 
 <script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
