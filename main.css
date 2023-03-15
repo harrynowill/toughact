@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 :root {
     --font: 'Roboto Mono', monospace;
     --background-red: #fa655a;
     --background-pink: #ffbbf2;
     --link-pink: #ffd4fa;
     --background-black: #08080a;
+    --background-darkgrey: #1B1711;
     --link-black: #05081A;
     --text-blue: #8095f3;
+    --text-lightgrey: #d6ced5;
     --color: black;
     --max-width: 50em;
     --max-link-width: 30em;
@@ -103,10 +106,16 @@ footer {
     margin-bottom: 0;
 }
 
-.dark {
+.dark-blue {
     background-color: #1a1a47;
     color: var(--text-blue);
     border: dashed var(--text-blue) 2px;
+}
+
+.dark-grey {
+    background-color: hsl(0, 0%, 28%);
+    color: var(--text-lightgrey);
+    border: dashed var(--text-lightgrey) 2px;
 }
 
 img {
@@ -129,6 +138,7 @@ img {
     flex: 1 auto;
     align-items: center;
     justify-content: center;
+    border: none;
     margin: 0;
     align-items: stretch;
     background-color: inherit;
