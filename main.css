@@ -31,6 +31,8 @@ h1 {
     letter-spacing: 1px;
     font-size: 350%;
     font-stretch: condensed;
+    padding: 10% 10% 0% 10%;
+    line-height: 95%;
 }
 
 h2 {
@@ -79,33 +81,6 @@ footer {
     padding-bottom: 20px;
 }
 
-#userPhoto {
-    width: 96px;
-    height: 96px;
-    display: block;
-    margin: 35px auto 20px;
-    border-radius: 50%;
-    border: solid var(--color) 2px;
-}
-
-#userName {
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1.25;
-    display: block;
-    color: var(--color);
-}
-
-#links {
-    max-width: 90%;
-    width: auto;
-    display: block;
-    margin: 27px auto;
-}
-
 .link {
     display: block;
     margin-bottom: 20px;
@@ -121,6 +96,12 @@ footer {
     width: 90%;
     max-width: var(--max-link-width);
     background-color: #ff9f98;
+}
+
+.dark {
+    background-color: #1a1a47;
+    color: var(--text-blue);
+    border: dashed var(--text-blue) 2px;
 }
 
 img {
