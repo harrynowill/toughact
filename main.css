@@ -42,6 +42,17 @@ h2 {
     max-width: 40em;
 }
 
+p {
+    display: block;
+    /* font-size: 1.2rem; */
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    /* color: var(--color); */
+    word-wrap: break-word;
+    max-width: var(--max-link-width);
+}
+
 span.block {
     display: inline-block;
 }
@@ -86,6 +97,10 @@ footer {
     width: 90%;
     max-width: var(--max-link-width);
     background-color: #ff9f98;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
 }
 
 .dark {
