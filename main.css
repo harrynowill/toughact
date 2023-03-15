@@ -8,7 +8,9 @@
 }
 
 body{
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    /* backgrounrgb(5, 5, 5)90); */
+background: linear-gradient(0deg, rgba(250,101,90,1) 67%, rgba(255,187,242,1) 72%);
     color: var(--color);
     font-family: var(--font);
     margin: 0;
