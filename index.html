@@ -19,7 +19,7 @@
         </h2>
 
         <h2>tough act #2
-            <br> with ????????? (USA), ?????????, ?????????,
+            <br> with <span id="lineup">????????? (USA), Angel D'lite, DJ Netflex,</span>
             <br> salt pillar, d. clemente, fka hardcore, dj soyboi
         </h2>
         <a class="link" style="background-color: var(--background-black); color: var(--text-blue); border: dashed var(--text-blue) 2px;" href="https://ra.co/events/1506131">
@@ -27,7 +27,7 @@
         <img src="img/flyer2.webp" class="img" alt="tough act #2 flyer">
 
         <h2 style="padding-top: 3em;">rainy city radio takeover
-            <br> with k.holle, jess rose, kuriboh
+            <br> with k.holle, jess rose, kuriboh, tough act residents
         </h2>
         <img src="img/rainy-city-takeover.webp" class="img" alt="rainy city radio takeover flyer">
         <a class="link" style="background-color: var(--background-black); color: var(--text-blue); border: dashed var(--text-blue) 2px;" href="https://rainycityradio.live">
@@ -38,15 +38,13 @@
         <h2>tough act valentine's day livestream<br> with iceboy violet, britney from eccles, dj soyboi,<br> salt pillar, d. clemente, fka hardcore</h2>
         <div class="img"><img src="img/valentine.webp"></div>
         <br><br>
-        <!-- <a class="link" style="background-color: var(--link-pink);" href="https://www.twitch.tv/toughactmcr">
-                Live on Twitch!</a> -->
-        <iframe class="link" style="background-color: var(--link-pink);" width="560" height="315" src="https://www.youtube.com/embed/N99a404Es54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        <iframe loading="lazy" class="link" style="background-color: var(--link-pink);" width="560" height="315" src="https://www.youtube.com/embed/N99a404Es54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
     <div class="filler" style="background: linear-gradient(var(--background-pink), var(--background-red));"></div>
     <div class="content" style="background-color: var(--background-red);">
         <h2>tough act #1<br> with india jordan, myna, qwirk, fka hardcore,<br> dj soyboi, d. clemente, and salt pillar</h2>
-        <img src="img/flyer.webp" class="img" alt="tough act #1 flyer">
+        <img loading="lazy" src="img/flyer.webp" class="img" alt="tough act #1 flyer">
         <br>
         <p class="link">
             DJ Soyboi<br>
@@ -80,7 +78,7 @@
         </p>
 
         <h2>steam radio takeover<br> with fka hardcore, hats, qwirk, zeiknat</h2>
-        <img src="img/steam.webp" class="img">
+        <img loading="lazy" src="img/steam.webp" class="img">
         <br>
         <p class="link">
             Hats<br>
@@ -109,5 +107,14 @@
         <footer> (c) tough act 2022 </footer>
     </div>
 </body>
+<script>
+    lineup = document.getElementById("lineup");
+    var date = new Date();
+    var release_date = new Date(2022, 2, 23, 19, 0, 0, 0);
+    if (today > release) {
+        // secret lineup information, no peeking!
+        lineup.innerHTML = "Kilbourne, Angel D'lite, DJ Netflex,";
+    }
+</script>
 
 </html>
