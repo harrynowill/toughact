@@ -4,13 +4,14 @@
     --font: 'Roboto Mono', monospace;
     --background: #fa655a;
     --color: black;
+    --max-width: 50em;
+    --max-link-width: 30em;
     /* blue: 1446a0, pink: db3069 */
 }
 
-body{
+body {
     /* background-color: var(--background); */
     /* backgrounrgb(5, 5, 5)90); */
-background: linear-gradient(0deg, rgba(250,101,90,1) 67%, rgba(255,187,242,1) 72%);
     color: var(--color);
     font-family: var(--font);
     margin: 0;
@@ -21,21 +22,26 @@ background: linear-gradient(0deg, rgba(250,101,90,1) 67%, rgba(255,187,242,1) 72
     min-height: 100vh;
     /* min-width: 100vw; */
     flex-direction: column;
-
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: 'Anton', sans-serif;
     letter-spacing: 1px;
-    font-size: 350%; 
-    font-stretch: condensed; 
+    font-size: 350%;
+    font-stretch: condensed;
     /* padding-top: 5em; 
     padding-bottom: 5em;">; */
 }
 
-h2{
+h2 {
     text-align: center;
+    /* padding-top: 5em; */
+}
+
+.filler {
+    height: 10em;
+    width: 100%;
 }
 
 .vertical-center {
@@ -44,7 +50,7 @@ h2{
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
+}
 
 .container {
     flex: 1 auto;
@@ -54,23 +60,24 @@ h2{
     text-align: center;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     flex: 1 auto;
     align-items: center;
     justify-content: center;
     margin: 0;
+    /* max-width: 50em; */
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 0.75rem;
     font-weight: 400;
     padding-bottom: 20px;
 }
 
-#userPhoto{
+#userPhoto {
     width: 96px;
     height: 96px;
     display: block;
@@ -79,7 +86,7 @@ footer{
     border: solid var(--color) 2px;
 }
 
-#userName{
+#userName {
     width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
@@ -90,38 +97,37 @@ footer{
     color: var(--color);
 }
 
-#links{
+#links {
     max-width: 90%;
     width: auto;
     display: block;
     margin: 27px auto;
 }
 
-.link{
+.link {
     display: block;
     margin-bottom: 20px;
     padding: 17px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     border-radius: 5px;
     border: dashed var(--color) 2px;
     text-align: center;
-    text-decoration: none;  
-    color: var(--color);  
+    text-decoration: none;
+    color: var(--color);
     word-wrap: break-word;
     width: 90%;
-    max-width: 35em;
+    max-width: var(--max-link-width);
     background-color: #ff9f98;
 }
 
-img{
+img {
     border-radius: 0%;
-    max-width: 50em;
+    max-width: var(--max-width);
     width: 100%;
 }
 
-
-title{
+title {
     font-family: "Open Sans", sans-serif;
     font-weight: 800;
 }
