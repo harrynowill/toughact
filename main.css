@@ -38,6 +38,12 @@ h1 {
 h2 {
     text-align: center;
     font-size: 120%;
+    padding: 10px;
+    max-width: 40em;
+}
+
+span.block {
+    display: inline-block;
 }
 
 .subheading {
@@ -47,22 +53,6 @@ h2 {
 .filler {
     height: 15em;
     width: 100%;
-}
-
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.container {
-    flex: 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
 
 .content {
