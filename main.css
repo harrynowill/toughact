@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 :root {
     --font: 'Roboto Mono', monospace;
-    --background: #fa655a;
+    --background-red: #fa655a;
+    --background-pink: #ffbbf2;
+    --link-pink: #ffd4fa;
+    --background-black: #090909;
+    --link-black: #05081A;
+    --text-blue: #8095f3;
     --color: black;
     --max-width: 50em;
     --max-link-width: 30em;
-    /* blue: 1446a0, pink: db3069 */
 }
 
 body {
-    /* background-color: var(--background); */
-    /* backgrounrgb(5, 5, 5)90); */
     color: var(--color);
     font-family: var(--font);
     margin: 0;
@@ -20,7 +22,6 @@ body {
     -webkit-font-smoothing: antialiased;
     display: flex;
     min-height: 100vh;
-    /* min-width: 100vw; */
     flex-direction: column;
 }
 
@@ -30,13 +31,10 @@ h1 {
     letter-spacing: 1px;
     font-size: 350%;
     font-stretch: condensed;
-    /* padding-top: 5em; 
-    padding-bottom: 5em;">; */
 }
 
 h2 {
     text-align: center;
-    /* padding-top: 5em; */
 }
 
 .filler {
@@ -67,7 +65,6 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 0;
-    /* max-width: 50em; */
 }
 
 footer {
