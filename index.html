@@ -19,7 +19,7 @@
 <title>Tough Act</title>
 <link rel="stylesheet" href="main.css">
 
-<div class="content" style="background-color: var(--background-red);">
+<div class="content" style="background-color: var(--background-softpink);">
     <h1 id="home" style="max-width: 10em;">TOUGH ACT: FAST MUSIC FOR INSANE PEOPLE</h1>
     <h2 class="subheading">queer aggression
         <br> ❤️‍🔥
@@ -27,7 +27,7 @@
     </h2>
 
     <h2 class="no-bottom-margin">socials</h2>
-    <div class="link horizontal-container">
+    <div class="link horizontal-container" style="padding-bottom: 10px;">
         <div class="icon-block">
             <a href="https://www.instagram.com/toughactmcr/" target="_blank">
                 <img class="icon" src="img/icons/instagram.svg" alt="instagram logo">
@@ -51,6 +51,33 @@
         our email is: toughactmcr @ [email service from google]
     </p>
 
+    <div id="carlton-club-form">
+        <h2 class="no-bottom-margin">news!</h2>
+        <p>
+            Have you ever thought to yourself <em>"gee, I do wish there was a village fayre, but in a big city and run by a load of faggots"</em>? 
+            Well we have something for you, and we need your help!
+        </p>
+        <p>
+            We're looking for performers, artists looking to sell their work, anyone who wants to run a stall etc. for our fayre at Carlton Club on <strong>Saturday July 22nd</strong>. Interested?
+        </p>
+        <a class="link pastel-pink" href="https://forms.gle/AwM4DUwaydCJofRy7">🎪 Application form 🎪</a>
+    </div>
+
+
+    <h2 class="no-bottom-margin">upcoming</h2>
+    <h2 id="TA007">tough act #7
+        <br> with the tough act residents association and some other djs?? i guess???
+    </h2>
+    <p>saturday june 15th at the white hotel</p>
+    <a class="link pastel-pink" id="ta007-link" href="https://ra.co/events/1676496">😤 Tickets on Resident Advisor 🤠</a>
+    <a class="link pastel-pink" style="padding: 10px;" href="t.me/toughact">
+        <em>Want to know lineups before anyone else? Wanna keep up with the latest Tough Act bullshit without being a slave to the Instagram algorithm? Try Tough Act's Telegram channel!</em>
+    </a>
+</div>
+
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-softpink)10%, var(--background-red)90%);"></div>
+<div class="content" style="background-color: var(--background-red);">
+    <h2 class="no-bottom-margin">past</h2>
     <h2 id="TA006">tough act #6
         <br> with
         <span class="block">dj flight</span>,
@@ -58,10 +85,7 @@
         <span class="block">stolen velour</span>,
         <br> and the tough act residents association
     </h2>
-    <p>saturday march 18th at the white hotel</p>
-    <a class="link" href="https://ra.co/events/1644260">😤 Tickets on Resident Advisor 🤠</a>
     <img src="/img/ta006.webp" alt="tough act 6 poster" id="ta006">
-</div>
 
 <div class="filler" style="height: 10em; background: linear-gradient(var(--background-red)10%, var(--background-darkgrey)90%);"></div>
 
@@ -258,7 +282,7 @@
         </audio>
     </p>
     <footer>
-        (c) tough act 2022
+        (c) tough act 2023
     </footer>
 </div>
 
@@ -270,6 +294,19 @@
             email.style.visibility = "visible";
         } else {
             email.style.visibility = "collapse";
+        }
+    }
+
+    // hides links to things that have already happened
+    const expiry_times = {
+        "ta007-link": new Date("2023-06-15T23:59:59+00:00"),
+        "carlton-club-form": new Date("2023-07-08T23:59:59+00:00"),
+    }
+
+    for (const [id, expiry_time] of Object.entries(expiry_times)) {
+        if (Date.now() > expiry_time) {
+            console.log("hiding " + id);
+            document.getElementById(id).style.display = "none";
         }
     }
 </script>
