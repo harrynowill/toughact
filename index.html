@@ -75,10 +75,10 @@
         </h3>
         <p>saturday july 15th at the white hotel</p>
         <!-- <a class="link pastel-pink" id="ta007-link" href="https://ra.co/events/1676496">😤 Tickets on Resident Advisor 🤠</a> -->
-        <h4 class="fancy">Their Can Only Be One!!1!</h4>
-        <a class="link pastel-pink" href="https://square.link/u/o4DqBGse?src=embed">🐛 VERY EXCLUSIVE TICKET + BUG POSTER COMBO 🏆
+        <p class="fancy">FOR SALE (Their Can Only Be One)!!1!</p>
+        <a class="link pastel-pink" href="https://square.link/u/o4DqBGse?src=embed" id="bug-link">🐛 VERY EXCLUSIVE TICKET + BUG POSTER COMBO 🏆
             <br><em>includes entry to tough act and an extra special bug poster we bought when we were posting lots about bugs to be collected on the night.</em></a>
-        
+
         <img src="/img/ta007.webp" alt="tough act 7 poster" style="padding-bottom: 2em;">
 
         <a class="link pastel-pink" style="padding: 10px;" href="https://t.me/toughact">
@@ -317,7 +317,7 @@
 
     // only show future events once older events have happened
     const show_times = {
-        "ta008": new Date("2023-07-16T00:00:00+00:00"),
+        "ta008": new Date("2023-07-16T00:00:00+01:00"),
     }
 
     for (const [id, expiry_time] of Object.entries(expiry_times)) {
@@ -332,6 +332,14 @@
             console.log("hiding " + id);
             document.getElementById(id).style.display = "none";
         }
+    }
+
+    if (Date.now() < new Date("2023-07-13T11:11:11+01:00")) {
+        console.log("hiding bug link");
+        link = document.getElementById("bug-link");
+        
+        link.href = "https://www.youtube.com/shorts/Tt7bzxurJ1Ik";
+        link.innerText += " available soon! :)";
     }
 </script>
 
