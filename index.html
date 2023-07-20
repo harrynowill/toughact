@@ -54,10 +54,17 @@
     <a class="link pastel-pink no-bottom-margin" href="https://www.dazeddigital.com/life-culture/article/60063/1/the-ultimate-guide-to-uk-queer-nightlife-for-2023" target="_blank">🏆 Dazed crowns Tough Act best queer night in Manchester* 😎</a>
     <p>*by omission</p>
 
-    <h2 class="no-bottom-margin">upcoming</h3>
+    <h2 class="no-bottom-margin">upcoming</h2>
+        <div id="ta009">
+            <h3 class="no-bottom-margin">tough act #9</h3>
+            <p>saturday november 4th 2023, more info coming soon</p>
+        </div>
+
         <div id="ta008">
             <h3 class="no-bottom-margin">tough act #8</h3>
-            <p class="no-bottom-margin">friday august 25th, more info coming soon</p>
+            <p>pride at the pub, shame at the club. <br>friday august 25th, at the DBA until midnight then white hotel until 7 am!</p>
+            <a class="link pastel-pink" href="https://ra.co/events/1744177" id="ta-8-twh">🌈 Pride at the Pub on Resident Advisor 🍻</a>
+            <a class="link pastel-pink" href="https://ra.co/events/1729323" id="ta-8-dba">🚬 Shame at the Club on Resident Advisor 🥾</a>
         </div>
 
         <h3 class="no-bottom-margin">tough act: fair!</h3>
@@ -66,27 +73,26 @@
         <p>from 8 pm: <span class="fancy">Tough Act Fair Knights</span>, an adults-only club night with f.o.t.u, fat camp (wigan pier set), phia sky (live), and the tough act residents association!</p>
         <a class="link pastel-pink" href="https://ra.co/events/1721782" id="ta-fair-link">⛓️ Tickets on Resident Advisor 🎪</a>
 
-        <h3 id="TA007">tough act #7
-            <br> with
-            <span class="block">dj g2g</span>,
-            <span class="block">crrdr</span>,
-            <span class="block">this guy</span> b2b keldiavlo,
-            <br> and the tough act residents association
-        </h3>
-        <p>saturday july 15th at the white hotel</p>
-        <p class="">sold out! 50 x £15 tickets available on the door (cash only), after which tickets will be £20 and subject to capacity. last guaranteed entry for ticket holders is 2 am, after which entry will be subject to capacity (you won't have to pay again but you may have to wait if the club is full!)</p>
-        <a class="link pastel-pink" id="ta007-link" href="https://ra.co/events/1676496" id="bug-link">🐛 Resale queue on Resident Advisor 🏆</a>
-
-        <img src="/img/ta007.webp" alt="tough act 7 poster" style="padding-bottom: 2em;">
-
         <a class="link pastel-pink" style="padding: 10px;" href="https://t.me/toughact">
             <em>Want to know lineups before anyone else? Wanna keep up with the latest Tough Act bullshit without being a slave to the Instagram algorithm? Try Tough Act's Telegram channel!</em>
         </a>
 </div>
 
-<div class="filler" style="height: 10em; background: linear-gradient(var(--background-softpink)10%, var(--background-red)90%);"></div>
-<div class="content" style="background-color: var(--background-red);">
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-softpink)10%, var(--background-black)90%);"></div>
+<div class="content" style="color: var(--text-lightgrey); background-color: var(--background-black);">
     <h2 class="no-bottom-margin">past</h2>
+    <h3 id="TA007">tough act #7
+        <br> with
+        <span class="block">dj g2g</span>,
+        <span class="block">crrdr</span>,
+        <span class="block">this guy</span> b2b keldiavlo,
+        <br> and the tough act residents association
+    </h3>
+    <img src="/img/ta007.webp" alt="tough act 7 poster" style="padding-bottom: 2em;">
+
+</div>
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-black)10%, var(--background-red)90%);"></div>
+<div class="content" style="background-color: var(--background-red);">
     <h3 id="TA006">tough act #6
         <br> with
         <span class="block">dj flight</span>,
@@ -309,13 +315,15 @@
 
     // hides links to things that have already happened
     const expiry_times = {
-        "ta007-link": new Date("2023-07-15T23:59:59+00:00"),
         "ta-fair-link": new Date("2023-07-22T23:59:59+00:00"),
+        "ta-8-twh": new Date("2023-08-25T23:59:59+00:00"),
+        "ta-8-dba": new Date("2023-08-25T23:59:59+00:00"),
     }
 
     // only show future events once older events have happened
     const show_times = {
-        "ta008": new Date("2023-07-16T00:00:00+01:00"),
+        "ta008": new Date("2023-07-16T00:00:00+01:00"), // reveal ta008 on 16th july
+        "ta009": new Date("2023-08-26T00:00:00+01:00"), // reveal ta009 on 26th august
     }
 
     for (const [id, expiry_time] of Object.entries(expiry_times)) {
@@ -330,14 +338,6 @@
             console.log("hiding " + id);
             document.getElementById(id).style.display = "none";
         }
-    }
-
-    if (Date.now() < new Date("2023-07-13T11:11:11+01:00")) {
-        console.log("hiding bug link");
-        link = document.getElementById("bug-link");
-        
-        link.href = "https://www.youtube.com/shorts/Tt7bzxurJ1I";
-        link.innerText += " available soon! :)";
     }
 </script>
 
