@@ -48,39 +48,49 @@
         </div>
     </div>
     <p id="email-textbox" class="link pastel-pink" style="visibility: collapse;">
-        our email is: toughactmcr @ [email service from google]
+        our email is: info @ [this website's domain]
     </p>
 
     <a class="link pastel-pink no-bottom-margin" href="https://www.dazeddigital.com/life-culture/article/60063/1/the-ultimate-guide-to-uk-queer-nightlife-for-2023" target="_blank">🏆 Dazed crowns Tough Act best queer night in Manchester* 😎</a>
-    <p>*by omission</p>
+    <p style="margin-bottom: 2em;">*by omission</p>
+
+    <a class="link pastel-pink" style="padding: 20px;" href="https://t.me/toughact">
+        <em>Want to know lineups before anyone else? Wanna keep up with the latest Tough Act bullshit without being a slave to the Instagram algorithm? Try Tough Act's Telegram channel!</em>
+    </a>
 
     <h2 class="no-bottom-margin">upcoming</h2>
-        <div id="ta009">
-            <h3 class="no-bottom-margin">tough act #9</h3>
-            <p>saturday november 4th 2023, more info coming soon</p>
-        </div>
+    <div id="ta009">
+        <h3 class="no-bottom-margin">tough act #9</h3>
+        <p>the best queer night in manchester on november 4th</p>
+        <a class="link pastel-pink" href="https://ra.co/events/1741376" id="ta-9">😶‍🌫️ Tickets on Resident Advisor 🥵</a>
+    </div>
 
-        <div id="ta008">
-            <h3 class="no-bottom-margin">tough act #8</h3>
-            <p>pride at the pub, shame at the club. <br>friday august 25th, at the DBA until midnight then white hotel until 7 am!</p>
-            <a class="link pastel-pink" href="https://ra.co/events/1744177" id="ta-8-twh">🌈 Pride at the Pub on Resident Advisor 🍻</a>
-            <a class="link pastel-pink" href="https://ra.co/events/1729323" id="ta-8-dba">🚬 Shame at the Club on Resident Advisor 🥾</a>
-        </div>
+    <div id="ta008">
+        <h3 class="no-bottom-margin">tough act #8</h3>
+        <p>pride at the pub, shame at the club. <br>friday august 25th, at the DBA until midnight then white hotel until 7 am!</p>
+        <a class="link pastel-pink" href="https://ra.co/events/1744177" id="ta-8-twh">🌈 Pride at the Pub on Resident Advisor 🍻</a>
+        <a class="link pastel-pink" href="https://ra.co/events/1729323" id="ta-8-dba">🚬 Shame at the Club on Resident Advisor 🥾</a>
+    </div>
 
-        <h3 class="no-bottom-margin">tough act: fair!</h3>
-        <p>saturday july 22nd at the carlton club, manchester.</p>
-        <p>from 3 pm: friendly daytime vibes with food, games, queer vendors, prizes, and a very exclusive storytime with d. clemente!</p>
-        <p>from 8 pm: <span class="fancy">Tough Act Fair Knights</span>, an adults-only club night with f.o.t.u, fat camp (wigan pier set), phia sky (live), and the tough act residents association!</p>
-        <a class="link pastel-pink" href="https://ra.co/events/1721782" id="ta-fair-link">⛓️ Tickets on Resident Advisor 🎪</a>
+    <h3 class="no-bottom-margin">tough act dj set!</h3>
+    <p>friday august 11th at the talleyrand, levenshulme for levenshulme pride</p>
+    <a class="link pastel-pink" href="https://www.instagram.com/talleyrandmcr/">🍻 The Talleyrand on Instagram 🏳️‍🌈</a>
 
-        <a class="link pastel-pink" style="padding: 10px;" href="https://t.me/toughact">
-            <em>Want to know lineups before anyone else? Wanna keep up with the latest Tough Act bullshit without being a slave to the Instagram algorithm? Try Tough Act's Telegram channel!</em>
-        </a>
+
 </div>
 
 <div class="filler" style="height: 10em; background: linear-gradient(var(--background-softpink)10%, var(--background-black)90%);"></div>
 <div class="content" style="color: var(--text-lightgrey); background-color: var(--background-black);">
     <h2 class="no-bottom-margin">past</h2>
+    <h3 class="no-bottom-margin">tough act: fair!</h3>
+    <p>saturday july 22nd at the carlton club, manchester.</p>
+    <p>from 3 pm: friendly daytime vibes with food, games, queer vendors, prizes, and a very exclusive storytime with d. clemente!</p>
+    <p>from 8 pm: <span class="fancy">Tough Act Fair Knights</span>, an adults-only club night with f.o.t.u, fat camp (wigan pier set), phia sky (live), and the tough act residents association!</p>
+    <div style="display: flex; max-width: calc(var(--max-width) * 1.2);">
+        <img src="/img/fair-day.webp" alt="tough act fair poster - day" style="width: 50%;">
+        <img src="/img/fair-night.webp" alt="tough act fair poster - night" style="width: 50%;">
+    </div>
+
     <h3 id="TA007">tough act #7
         <br> with
         <span class="block">dj g2g</span>,
@@ -305,7 +315,7 @@
 <script>
     // toggles the visibility of the email textbox
     function show() {
-        var email = document.getElementById("email-textbox");
+        let email = document.getElementById("email-textbox");
         if (email.style.visibility == "collapse") {
             email.style.visibility = "visible";
         } else {
@@ -315,15 +325,13 @@
 
     // hides links to things that have already happened
     const expiry_times = {
-        "ta-fair-link": new Date("2023-07-22T23:59:59+00:00"),
         "ta-8-twh": new Date("2023-08-25T23:59:59+00:00"),
         "ta-8-dba": new Date("2023-08-25T23:59:59+00:00"),
+        "ta-9": new Date("2023-11-04T23:59:59+00:00"),
     }
 
     // only show future events once older events have happened
     const show_times = {
-        "ta008": new Date("2023-07-16T00:00:00+01:00"), // reveal ta008 on 16th july
-        "ta009": new Date("2023-08-26T00:00:00+01:00"), // reveal ta009 on 26th august
     }
 
     for (const [id, expiry_time] of Object.entries(expiry_times)) {
@@ -339,6 +347,18 @@
             document.getElementById(id).style.display = "none";
         }
     }
+
+    // Update the meta description to include the next event
+    const currentDescription = "Tough Act: queer aggression, militant kindness. Every few months at The White Hotel, Manchester."
+    let newDescription = currentDescription;
+    if (Date.now() < expiry_times["ta-8-twh"]) {
+        newDescription += " Next event: August 25th.";
+    }
+    else if (Date.now() < expiry_times["ta-9"]) {
+        newDescription += " Next event: November 4th.";
+    }
+
+    document.querySelector('meta[name="description"]').setAttribute("content", newDescription);
 </script>
 
 <script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
