@@ -51,6 +51,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -154,6 +155,11 @@ footer {
     border: dashed var(--text-lightgrey) 2px;
 }
 
+.split-link {
+    background-image: linear-gradient(to right,#62bdea 50%, #d266d2 50%);
+    color: white;
+}
+
 .pastel-pink {
     background-color: #ffcdd8;
     color: var(--link-black);
@@ -164,6 +170,11 @@ img {
     border-radius: 0%;
     max-width: var(--max-width);
     width: 100%;
+}
+
+.multi-image {
+    display: flex;
+    max-width: calc(var(--max-width) * 1.2);
 }
 
 .icon {
