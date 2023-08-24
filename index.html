@@ -28,10 +28,10 @@
 
     <h2 class="no-bottom-margin" id="up-next">up next</h2>
     <h3 class="no-bottom-margin">tough act #8</h3>
-    <p>pride at the pub, shame at the club. <br>friday august 25th, at the DBA until midnight then white hotel until 7 am!</p>
+    <p>pride at the pub, shame at the club. <br>friday august 25th, at the DBA from 4 pm until midnight then white hotel until 7 am!</p>
     <a class="link split-link" href="https://ra.co/events/1744177" id="ta-8-twh">🌈 Pride at the Pub on Resident Advisor 🍻</a>
     <a class="link split-link" href="https://ra.co/events/1729323" id="ta-8-dba">🚬 Shame at the Club on Resident Advisor 🥾</a>
-    <div class="multi-image" id="ta008-posters" style="display: none;">
+    <div class="multi-image" id="ta008-posters">
         <img src="/img/pride-pub.webp" alt="pride at the pub poster" style="width: 50%;">
         <img src="/img/shame-club.webp" alt="shame at the club poster" style="width: 50%;">
     </div>
@@ -355,20 +355,8 @@
     else if (Date.now() < expiry_times["ta-9"]) {
         newDescription += " Next event: November 4th.";
     }
-
     document.querySelector('meta[name="description"]').setAttribute("content", newDescription);
 
-    const upNext = document.getElementById('up-next');
-    const ta008Posters = document.getElementById('ta008-posters');
-    let clickCount = 0;
-
-    upNext.addEventListener('click', () => {
-        clickCount++;
-
-        if (clickCount === 3) {
-            ta008Posters.style.display = 'flex';
-        }
-    });
 </script>
 
 <script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
