@@ -23,7 +23,12 @@
 
 <body>
     {{ content }}
+    <!--  if we are on "tickets" page, use the first post instead of the last -->
+    {% if page.title == "tickets" %}
     <div class="content" style="{{site.posts.last.background}}; color:{{site.posts.last.colour}}">
+    {% else %}
+    <div class="content" style="{{site.posts.first.background}}; color:{{site.posts.first.colour}}">
+    {% endif %}
         <footer>
             (c) tough act {{ site.time | date: "%Y" }}
         </footer>
