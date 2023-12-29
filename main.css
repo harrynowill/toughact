@@ -62,6 +62,7 @@ h1 {
     font-stretch: condensed;
     padding: 10% 10% 0% 10%;
     line-height: 95%;
+    max-width: 10em;
 }
 
 h2 {

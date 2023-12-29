@@ -1,0 +1,50 @@
+<div class="content" style="{{page.background | default: page.background}}; color:{{page.colour | default: page.colour}}">
+    <h3 class="no-bottom-margin">{{page.title}}</h3>
+    <p>with
+        {% for item in page.lineup %}
+        {% assign words = item | split: ' ' %}
+        {% if words.size < 3 %} {% assign class='block' %} {% else %} {% assign class='' %} {% endif %} {% if forloop.length> 1 and forloop.last %}
+            and <span class={{class}}>{{ item | downcase }}</span>
+            {% elsif forloop.length > 2 %}
+            <span class={{class}}>{{ item | downcase}}</span>,
+            {% else %}
+            {{ item | downcase}}
+            {% endif %}
+            {% endfor %}
+    </p>
+
+    {% assign day = 'now' | date: "%-d" %}
+    {% case day %}
+    {% when '1' or '21' or '31' %}
+    {% assign suffix = 'st' %}
+    {% when '2' or '22' %}
+    {% assign suffix = 'nd' %}
+    {% when '3' or '23' %}
+    {% assign suffix = 'rd' %}
+    {% else %}
+    {% assign suffix = 'th' %}
+    {% endcase %}
+
+    {% if page.date %}
+    <p>{{ page.date | date: "%A %B %d" | downcase}}{{ suffix }} {{ page.date | date: "%Y" }} at {{ page.location | downcase}}</p>
+    {% endif %}
+
+    <!-- add a link if the event is in the future and has a link -->
+    {% assign current_date = 'now' | date: '%s' %}
+    {% assign event_date = page.date | date: '%s' %}
+    {% if event_date >= current_date and page.link %}
+    <a href="{{page.link}}" class="link {{page.link-class}}" style="color: {{page.colour}}; {{page.link-style}}">🥴 Tickets on Resident Advisor 🫡</a>
+    {% endif %}
+
+    {% if page.image.size > 1 %}
+    {% assign width = 100 | divided_by: page.image.size %}
+    <div class="multi-image">
+        {% for image in page.image %}
+        <img src="{{image}}" alt="{{page.img_alt}}" onerror="this.style.display='none'" style="width: {{width}}%;">
+        {% endfor %}
+    </div>
+    {% else if page.image.size == 1 %}
+    <img src="{{page.image}}" alt="{{page.img_alt}}" onerror="this.style.display='none'">
+    {% endif %}
+    {{ content }}
+</div>

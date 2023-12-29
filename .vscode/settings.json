@@ -1,3 +1,6 @@
 {
-    "codechecker.editor.showDatabaseDialog": false
+    "codechecker.editor.showDatabaseDialog": false,
+    "[html]": {
+        "editor.formatOnSave": false
+    }
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+    <meta name="author" content="{{ page.author | default: 'Tough Act' }}">
+    <meta name="robots" content="index, follow">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="{{ page.title | default: site.title }}">
+    <meta name="application-name" content="{{ page.title | default: site.title }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    {{ content }}
+    <div class="content" style="{{site.posts.last.background}}; color:{{site.posts.last.colour}}">
+        <footer>
+            (c) tough act {{ site.time | date: "%Y" }}
+        </footer>
+    </div>
+</body>
+
+<script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+</html>

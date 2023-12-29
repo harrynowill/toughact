@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content="Tough Act: queer aggression, militant kindness. Every few months at The White Hotel, Manchester.">
+<meta name="keywords" content="tough act, manchester, the white hotel, dance music, lgbt, lgbtq, gay, lesbian, trans, clubbing, queer, jungle, hardcore, techno, gabber, dj">
+<meta name="author" content="Tough Act">
+<meta name="robots" content="index, follow">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Tough Act">
+<meta name="application-name" content="Tough Act">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+
+<title>Tough Act</title>
+<link rel="stylesheet" href="main.css">
+
+<div class="content" style="background-image: linear-gradient(to right,#30ace9 50%, #a846a7 50%); color: white;">
+    <h1 id="home" style="max-width: 10em;">TOUGH ACT: SCARING THE HOES SINCE 2021</h1>
+    <h3 class="subheading">queer aggression
+        <br> 🥸
+        <br> militant kindness
+    </h3>
+
+    <div class="link horizontal-container" style="padding-bottom: 10px;">
+        <div class="icon-block">
+            <a href="https://www.instagram.com/toughact.fun/" target="_blank">
+                <img class="icon" src="img/icons/instagram.svg" alt="instagram logo">
+            </a>
+        </div>
+        <div class="icon-block">
+            <a href="https://t.me/toughact" target="_blank">
+                <img class="icon" style="filter: brightness(0.9) saturate(0.65);" src="img/icons/telegram.svg" alt="telegram logo">
+            </a>
+        </div>
+        <div class="icon-block">
+            <img class="icon" onclick="show()" style="filter: invert(95%);" src="img/icons/email.svg" alt="email icon">
+        </div>
+    </div>
+    <p id="email-textbox" class="link split-link" style="visibility: collapse;">
+        our email is: loser @ [this website's domain]
+    </p>
+
+    <h2 class="merch-container no-bottom-margin" id="merch">merch</h2>
+    <div class="horizontal-container" style="width: auto;">
+        <div class="merch-box">
+            <img src="/img/merch/shirt.jpg" alt="I'D RATHER BE AT TOUGH ACT" onerror="this.style.display='none'" style="width: 100%;">
+            <div style="padding: 1%;">
+                <p style="font-size: 18px;line-height: 20px;">I'D RATHER BE AT TOUGH ACT</p>
+                <p style="font-size: 18px;line-height: 20px;font-weight: 600;">£20.00</p>
+                <a target="_blank" href="https://toughact.square.site/product/id-rather-be-at-tough-act/7?cs=true&cst=custom" class="link" style=" color: #ffffff; background-color: #62bdea; width: auto;">🥺 buy now 👉👈</a>
+            </div>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        </div>
+
+        <div id="scarf" class="merch-box" style="margin-left: 20px;">
+            <img src="/img/merch/scarf.jpg" alt="PRIDE / SHAME SCARF" onerror="this.style.display='none'" style="width: 100%;">
+            <div style="padding: 1%;">
+                <p style="font-size: 18px;line-height: 20px;">PRIDE / SHAME SCARF</p>
+                <p style="font-size: 18px;line-height: 20px;font-weight: 600;">£30.00</p>
+                <a target="_blank" href="https://toughact.square.site/product/pride-shame-scarf/9?cs=true&cst=custom" class="link" style=" color: #ffffff; background-color: #62bdea; width: auto;">🥺 buy now 👉👈</a>
+            </div>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        </div>
+    </div>
+
+    <h2 class="no-bottom-margin" id="up-next">up next</h2>
+
+
+    <h3 class="no-bottom-margin">tough act #10
+        <br> with the tough act residents association
+    </h3>
+    <p>saturday december 30th 2023 at the white hotel</p>
+    <a class="link split-link" style="padding: 20px;" href="https://ra.co/events/1807168">
+        <em>👽 Tickets on Resident Advisor 👿</em>
+    </a>
+
+    <!-- <a class="link split-link" style="padding: 20px;" href="https://t.me/toughact">
+        <em>Want to know lineups before anyone else? Wanna keep up with the latest Tough Act bullshit without being a slave to the Instagram algorithm? Try Tough Act's Telegram channel!</em>
+    </a> -->
+    <!-- <h2 class="no-bottom-margin">up later</h2> -->
+    <div class="filler" style="height: 10em; background: linear-gradient(#ffffff00, var(--background-pink));"></div>
+</div>
+<div class="content" style="color: var(--text-pink); background-color: var(--background-pink);">
+    <h2 class="no-bottom-margin">past</h2>
+    <h3 class="no-bottom-margin">tough act #9: the best queer night in manchester on november 4th
+        <br> with
+        <span class="block">himera</span>,
+        <span class="block">i. jordan</span>,
+        <span class="block">djlaundrybasket</span>,
+        <span class="block">dj tinyhandz</span>,
+        and the tough act residents association
+    </h3>
+    <img src="/img/ta009.webp" alt="tough act 9 poster" style="padding-bottom: 2em;">
+</div>
+<div class="content" style="background-image: linear-gradient(to right,#30ace9 50%, #a846a7 50%); color: white;">
+    <div class="filler" style="height: 5em; background: linear-gradient(var(--background-pink), #ffffff00);"></div>
+    <h3 class="no-bottom-margin">tough act #8</h3>
+    <p>pride in the pub, shame at the club</p>
+    <div class="multi-image" id="ta008-posters">
+        <img src="/img/pride-pub.webp" alt="pride at the pub poster" style="width: 50%;">
+        <img src="/img/shame-club.webp" alt="shame at the club poster" style="width: 50%;">
+    </div>
+
+
+    <div class="filler" style="height: 10em; background: linear-gradient(#ffffff00, var(--background-black));"></div>
+</div>
+
+<div class="content" style="color: var(--text-lightgrey); background-color: var(--background-black);">
+    <a class="link dark-grey no-bottom-margin" href="https://www.dazeddigital.com/life-culture/article/60063/1/the-ultimate-guide-to-uk-queer-nightlife-for-2023" target="_blank">🏆 Dazed crowns Tough Act best queer night in Manchester* 😎</a>
+    <p style="margin-bottom: 2em;">*by omission</p>
+
+    <h3 class="no-bottom-margin">tough act dj set</h3>
+    <p>friday august 11th 2023 at the talleyrand, levenshulme for levenshulme pride</p>
+
+    <h3 class="no-bottom-margin">tough act: fair!
+        <br> with
+        <span class="block">f.o.t.u</span>,
+        <span class="block">fat camp</span> (wigan pier set),
+        <span class="block">phia sky</span> (live),
+        and the tough act residents association
+    </h3>
+    <div class="multi-image">
+        <img src="/img/fair-day.webp" alt="tough act fair poster - day" style="width: 50%;">
+        <img src="/img/fair-night.webp" alt="tough act fair poster - night" style="width: 50%;">
+    </div>
+
+    <h3 id="TA007">tough act #7
+        <br> with
+        <span class="block">dj g2g</span>,
+        <span class="block">crrdr</span>,
+        <span class="block">this guy</span> b2b keldiavlo,
+        <br> and the tough act residents association
+    </h3>
+    <img src="/img/ta007.webp" alt="tough act 7 poster" style="padding-bottom: 2em;">
+
+</div>
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-black)10%, var(--background-red)90%);"></div>
+<div class="content" style="background-color: var(--background-red);">
+    <h3 id="TA006">tough act #6
+        <br> with
+        <span class="block">dj flight</span>,
+        <span class="block">lcy</span>,
+        <span class="block">stolen velour</span>,
+        <br> and the tough act residents association
+    </h3>
+    <img src="/img/ta006.webp" alt="tough act 6 poster" id="ta006">
+</div>
+
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-red)10%, var(--background-darkgrey)90%);"></div>
+
+<div class="content" style="color: var(--text-red); background-color: var(--background-darkgrey);">
+    <h3>tough act cultural outreach programme
+        <br> with the tough act steelworkers division
+    </h3>
+    <img src="/img/forge.webp" alt="forge flyer" id="forge-flyer">
+
+    <h3 id="TA005">tough act #5
+        <br> with
+        <span class="block">aya b2b xin <span class="fancy">(hardcore special)</span>, </span>
+        <span class="block">quest?onmarq, </span>
+        <span class="block">ziúr, </span>
+        <br> and the tough act residents association
+    </h3>
+    <img src="img/jan-headliner.webp" alt="january event flyer" id="ta005-flyer">
+</div>
+
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-darkgrey)10%, var(--background-softpink)100%);"></div>
+
+<div class="content" style="color: var(--background-darkgrey); background-color: var(--background-softpink);">
+    <h3 id="TA004">tough act #4
+        <br> with
+        <span class="block">gracie t <span class="fancy block">(graceline set)</span>, </span>
+        <span class="block">furious styles <span class="fancy block">(turbo shandy set)</span>, </span>
+        <span class="block">conor thomas <span class="fancy block">(speed degeneracy set)</span>, </span>
+        and the tough act residents association
+    </h3>
+    <img src="img/oct-full.webp" alt="october event flyer" id="ta004-flyer">
+</div>
+
+<div class="filler" style="height: 10em; background: linear-gradient(var(--background-softpink) 10%, var(--background-darkgrey)100%);"></div>
+
+<div class="content" style="color: var(--text-lightgrey); background-color: var(--background-darkgrey);">
+
+    <h3 class="no-bottom-margin">✨<i>feature</i>✨</h3>
+    <a class="link dark-grey" href="https://saltmagazine.co.uk/2022/04/16/the-joy-of-queer-dance-floors-in-manchester/">
+        <span class="block">Salt Magazine:</span>
+        <span class="block">The Joy of Queer Dance Floors in Manchester</span>
+    </a>
+
+    <h3 id="TA003" class="no-bottom-margin">tough act #3: <s>shame</s> pride special
+        <br> with
+        <span class="block">dj paypal, </span>
+        <span class="block">ayy den,</span>
+        <span class="block">poundshop,</span>
+        and the tough act residents association
+    </h3>
+    <img id="ta003-flyer" src="img/pride-headliner.webp" alt="tough act #3 flyer">
+</div>
+<div class="filler" style="height: 5em; background: linear-gradient(var(--background-darkgrey) 10%, var(--background-black) 90%);">
+</div>
+<div class="content" style="color: var(--text-blue); background-color: var(--background-black);">
+    <h3 style="color: var(--text-lightgrey);">tough act jubilee takeover
+        <br> with the tough act residents association
+    </h3>
+    <img id="yes" src="img/yes-flyer.webp" style="filter: hue-rotate(240deg);" alt="tough act yes takeover flyer">
+
+    <h3 id="TA002" style="padding-top: 3em;">tough act #2
+        <br> with
+        <span class="block">kilbourne, </span>
+        <span class="block">angel d'lite, </span>
+        <span class="block">dj netflex, </span>
+        <span class="block">salt pillar, </span>
+        <span class="block">d. clemente, </span>
+        <span class="block">fka hardcore, </span>
+        <span class="block">dj soyboi</span>
+    </h3>
+    <img id="flyer" src="img/kilbourne.webp" class="img" alt="tough act #2 flyer">
+
+    <h3 id="rainy-city-takeover" style="padding-top: 3em;">rainy city radio takeover
+        <br> with
+        <span class="block">k.holle, </span>
+        <span class="block">jess rose, </span>
+        <span class="block">kuriboh, </span>
+        <span class="block">and the tough act residents association</span>
+    </h3>
+    <img src="img/rainy-city-takeover.webp" class="img" alt="rainy city radio takeover flyer">
+
+    <iframe loading="lazy" class="link dark-blue" style="padding-top: 10px;" title="tough act takeover: kuriboh" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=0&feed=%2FRainyCityRadio%2Ftough-act-takeover-kuriboh-230322%2F" frameborder="0"></iframe>
+    <iframe loading="lazy" class="link dark-blue" title="tough act takeover: jess rose" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=0&feed=%2FRainyCityRadio%2Ftough-act-takeover-jess-rose-230322%2F" frameborder="0"></iframe>
+    <iframe loading="lazy" class="link dark-blue" title="tough act takeover: k. h0lle" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=0&feed=%2FRainyCityRadio%2Ftough-act-takeover-kh0lle-230322%2F" frameborder="0"></iframe>
+    <iframe loading="lazy" class="link dark-blue" title="tough act takeover: tough act cru" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=0&feed=%2FRainyCityRadio%2Ftough-act-takeover-tough-act-cru-230322%2F" frameborder="0"></iframe>
+</div>
+<div class="filler" style="background: linear-gradient(var(--background-black) 10%, var(--background-pink) 90%);">
+</div>
+<div class="content" style="background-color: var(--background-pink);">
+    <h3 id="valentines-livestream">tough act valentine's day livestream
+        <br> with
+        <span class="block">
+            <span class="block">iceboy violet, </span>
+            <span class="block">britney from eccles, </span>
+        </span>
+        <span class="block">
+            <span class="block">dj soyboi, </span>
+            <span class="block">salt pillar, </span>
+            <span class="block">d. clemente, </span>
+            <span class="block">fka hardcore</span>
+        </span>
+
+    </h3>
+    <div class="img">
+        <img src="img/valentine.webp" alt="tough act valentine's day livestream flyer">
+    </div>
+    <div style="padding-top: 10px;">
+        <iframe loading="lazy" class="link" style="background-color: var(--link-pink);" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N99a404Es54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="filler" style="background: linear-gradient(var(--background-pink), var(--background-red));"></div>
+<div class="content" style="background-color: var(--background-red);">
+    <h3 id="TA001">tough act #1<br> with
+        <span class="block">
+            <span class="block">i. jordan, </span>
+            <span class="block">myna, </span>
+            <span class="block">qwirk, </span>
+        </span>
+        <span class="block">
+            <span class="block">fka hardcore, </span>
+            <span class="block">dj soyboi, </span>
+            <span class="block">d. clemente, </span>
+            <span class="block">and salt pillar</span>
+        </span>
+    </h3>
+    <img loading="lazy" src="img/flyer.webp" class="img" alt="tough act #1 flyer">
+    <br>
+
+    <h3 id="steam-radio">steam radio takeover
+        <br> with
+        <span class="block">fka hardcore, </span>
+        <span class="block">hats, </span>
+        <span class="block">qwirk, </span>
+        <span class="block">zeiknat</span>
+    </h3>
+    <img loading="lazy" src="img/steam.webp" class="img" alt="tough act steam radio takeover flyer">
+
+    <footer>
+        (c) tough act 2023
+    </footer>
+</div>
+
+<script>
+    // toggles the visibility of the email textbox
+    function show() {
+        let email = document.getElementById("email-textbox");
+        if (email.style.visibility == "collapse") {
+            email.style.visibility = "visible";
+        } else {
+            email.style.visibility = "collapse";
+        }
+    }
+
+    // hides links to things that have already happened
+    const expiry_times = {
+        "ta-8-twh": new Date("2023-08-25T23:59:59+00:00"),
+        "ta-8-dba": new Date("2023-08-25T23:59:59+00:00"),
+        "ta-9": new Date("2023-11-04T23:59:59+00:00"),
+    }
+
+    // only show future events once older events have happened
+    const show_times = {
+    }
+
+    for (const [id, expiry_time] of Object.entries(expiry_times)) {
+        if (Date.now() > expiry_time) {
+            console.log("hiding " + id);
+            document.getElementById(id).style.display = "none";
+        }
+    }
+
+    for (const [id, show_time] of Object.entries(show_times)) {
+        if (Date.now() < show_time) {
+            console.log("hiding " + id);
+            document.getElementById(id).style.display = "none";
+        }
+    }
+
+    // Update the meta description to include the next event
+    const currentDescription = "Tough Act: queer aggression, militant kindness. Every few months at The White Hotel, Manchester."
+    let newDescription = currentDescription;
+    if (Date.now() < expiry_times["ta-8-twh"]) {
+        newDescription += " Next event: August 25th.";
+    }
+    else if (Date.now() < expiry_times["ta-9"]) {
+        newDescription += " Next event: November 4th.";
+    }
+    document.querySelector('meta[name="description"]').setAttribute("content", newDescription);
+
+</script>
+
+<script>
+    const merch = document.getElementById('merch');
+    const scarf = document.getElementById('scarf');
+    let clickCount = 0;
+
+    merch.addEventListener('click', () => {
+        clickCount++;
+
+        if (clickCount === 3) {
+            scarf.style.display = 'block';
+        }
+    });
+</script>
+
+<script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

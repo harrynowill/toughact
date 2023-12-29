@@ -1,0 +1,32 @@
+<!-- socials start -->
+<div class="link horizontal-container" style="padding-bottom: 10px;">
+    <div class="icon-block">
+        <a href="https://www.instagram.com/toughact.fun/" target="_blank">
+            <img class="icon" src="img/icons/instagram.svg" alt="instagram logo">
+        </a>
+    </div>
+    <div class="icon-block">
+        <a href="https://t.me/toughact" target="_blank">
+            <img class="icon" style="filter: brightness(0.9) saturate(0.65);" src="img/icons/telegram.svg" alt="telegram logo">
+        </a>
+    </div>
+    <div class="icon-block">
+        <img class="icon" onclick="show()" style="filter: invert(95%);" src="img/icons/email.svg" alt="email icon">
+    </div>
+</div>
+<p id="email-textbox" class="link {{site.posts.first.link-class}}" style="visibility: collapse; {{site.posts.first.background}}; filter: brightness(95%); color:{{site.posts.first.colour}}">
+    our email is: loser @ [this website's domain]
+</p>
+
+<script>
+    // toggles the visibility of the email textbox
+    function show() {
+        let email = document.getElementById("email-textbox");
+        if (email.style.visibility == "collapse") {
+            email.style.visibility = "visible";
+        } else {
+            email.style.visibility = "collapse";
+        }
+    }
+</script>
+<!-- socials end -->
