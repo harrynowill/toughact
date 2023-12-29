@@ -15,7 +15,7 @@ colour: "white"
 </div>
 
 <!-- post the up next posts -->
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
     {% assign event_date = post.date | date: '%s' %}
     {% if event_date >= current_date %}
         <div class="content" style="{{post.background | default: page.background}}; color:{{post.colour | default: page.colour}}">
