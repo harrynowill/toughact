@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+one-liner: "NO LONGER RUN BY RESIDENT ADVISOR*"
+emoji: "💅"
+background: "background-image: linear-gradient(to right,#30ace9 50%, #a846a7 50%)"
+colour: "white"
+---
 
-<!-- <meta charset="UTF-8" http-equiv="Refresh" content="0; url='https://ra.co/events/1535895'" /> -->
+{% assign current_date = 'now' | date: '%s' %}
+<div class="content" style="{{site.posts.first.background | default: page.background}}; color:{{site.posts.first.colour | default: page.colour}}">
+    {% include header.html %}
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-
-<title>Tough Act</title>
-<link rel="stylesheet" href="../main.css">
-
-<div class="content" style="background-color: var(--background-softpink);">
-    <h1 id="home" style="max-width: 10em;">TOUGH ACT: FAST MUSIC FOR INSANE PEOPLE</h1>
-    <h3 class="subheading">queer aggression
-        <br> 🐛
-        <br> militant kindness
-    </h3>
-
-    <h3 id="TA007">tough act #7
-        <br> with the tough act residents association and some other djs?? i guess??? just wait and see i guess.
-    </h3>
-    <p>saturday july 15th at the white hotel</p>
-    <a class="link pastel-pink" id="ta007-link" href="https://ra.co/events/1676496">😤 Tickets on Resident Advisor 🤠</a>
+    <h2>up next</h2>
 </div>
-<script data-goatcounter="https://toughact.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<!-- post the up next posts -->
+{% for post in site.posts %}
+    {% assign event_date = post.date | date: '%s' %}
+    {% if event_date >= current_date %}
+        <div class="content" style="{{post.background | default: page.background}}; color:{{post.colour | default: page.colour}}">
+            {{ post }}
+        </div>
+    {% endif %}
+{% endfor %}
+
+<div class="content" style="{{site.posts.first.background}}; color:{{site.posts.first.colour}}">
+    <p>*haha made you look :)</p>
+</div>
