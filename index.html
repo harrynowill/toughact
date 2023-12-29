@@ -1,6 +1,6 @@
 ---
 layout: default
-one-liner: "SCARING THE HOES SINCE 2021"
+one-liner: "NO LONGER RUN BY RESIDENT ADVISOR*"
 emoji: "💅"
 background: "background-image: linear-gradient(to right,#30ace9 50%, #a846a7 50%)"
 colour: "white"
@@ -10,7 +10,6 @@ colour: "white"
 <div class="content" style="{{site.posts.first.background | default: page.background}}; color:{{site.posts.first.colour | default: page.colour}}">
     {% include header.html %}
     {% include socials.html %}
-    {% include merch.html %}
 
     <h2>up next</h2>
 </div>
@@ -24,6 +23,12 @@ colour: "white"
         </div>
     {% endif %}
 {% endfor %}
+
+<div class="content" style="{{site.posts.first.background | default: page.background}}; color:{{site.posts.first.colour | default: page.colour}}">
+    {% include merch.html %}
+    <h2>music</h2>
+    <a class="link" style="{{site.posts.first.link-style | default: page.link-style}}; color:{{site.posts.first.colour | default: page.colour}};" href="https://soundcloud.com/toughact/christmas-in-ohio-fanum-tax-editin"> (っ◔◡◔)っ ♥ christmas in ohio ~ fanum tax editi☃n♥°❆⋆.ೃ࿔ (mixed by djlaundrybasket)</a>
+</div>
 
 <!-- get the most recent post in the past -->
 {% assign current_date = 'now' | date: '%s' %}
@@ -50,3 +55,10 @@ colour: "white"
     </div>
     {% endif %}
 {% endfor %}
+
+<div class="content" style="{{site.posts.last.background}}; color:{{site.posts.last.colour}}">
+    <p>*haha made you look :)</p>
+</div>
+
+<!-- add fillers -->
+<script src="js/filler.js"></script>
