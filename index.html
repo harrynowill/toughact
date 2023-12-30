@@ -26,8 +26,7 @@ colour: "white"
 
 <div class="content" style="{{site.posts.first.background | default: page.background}}; color:{{site.posts.first.colour | default: page.colour}}">
     {% include merch.html %}
-    <h2>music</h2>
-    <a class="link" style="{{site.posts.first.link-style | default: page.link-style}}; color:{{site.posts.first.colour | default: page.colour}};" href="https://soundcloud.com/toughact/christmas-in-ohio-fanum-tax-editin"> (っ◔◡◔)っ ♥ christmas in ohio ~ fanum tax editi☃n♥°❆⋆.ೃ࿔ (mixed by djlaundrybasket)</a>
+    {% include music.html %}
 </div>
 
 <!-- get the most recent post in the past -->
