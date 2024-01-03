@@ -10,17 +10,25 @@ colour: "white"
 <div class="content" style="{{site.posts.first.background | default: page.background}}; color:{{site.posts.first.colour | default: page.colour}}">
     {% include header.html %}
     {% include socials.html %}
-
-    <h2>up next</h2>
 </div>
 
-<!-- post the up next posts -->
+<!-- posts that are upcoming in the next month -->
+{% assign up_next_has_been_added = false %}
+{% assign next_month = 'now' | date: '%s' | plus: 2592000 | append: '' %}
 {% for post in site.posts reversed %}
     {% assign event_date = post.date | date: '%s' %}
     {% if event_date >= current_date %}
-        <div class="content" style="{{post.background | default: page.background}}; color:{{post.colour | default: page.colour}}">
-            {{ post }}
-        </div>
+        {% if event_date <= next_month %}
+            {% if up_next_has_been_added == false %}
+                <div class="content" style="{{post.background | default: page.background}}; color:{{post.colour | default: page.colour}}">
+                    <h2>up next</h2>
+                </div>
+                {% assign up_next_has_been_added = true %}
+            {% endif %}
+            <div class="content" style="{{post.background | default: page.background}}; color:{{post.colour | default: page.colour}}">
+                {{ post }}
+            </div>
+        {% endif %}
     {% endif %}
 {% endfor %}
 
@@ -29,19 +37,39 @@ colour: "white"
     {% include music.html %}
 </div>
 
+<!-- post events that are more than a month away -->
+{% for post in site.posts reversed %}
+    {% assign event_date = post.date | date: '%s' %}
+    {% if event_date >= current_date %}
+        {% if event_date > next_month %}
+        {% if up_next_has_been_added == false %}
+            <div class="content" style="{{post.background | default: page.background}}; color:{{post.colour | default: page.colour}}">
+                <h2>up next</h2>
+            </div>
+            {% assign up_next_has_been_added = true %}
+        {% endif %}
+        <div class="content" style="{{post.background | default: page.background}}; color:{{post.colour | default: page.colour}}">
+            {{ post }}
+        </div>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
 <!-- get the most recent post in the past -->
 {% assign current_date = 'now' | date: '%s' %}
 {% assign past_post_background = page.background %}
+{% assign past_post_colour = page.colour %}
 {% for post in site.posts %}
     {% assign event_date = post.date | date: '%s' %}
     {% if event_date < current_date %} 
         {% assign past_post_background = post.background %} 
+        {% assign past_post_colour = post.colour %}
         {% break %} 
     {% endif %} 
 {% endfor %}
 
 
-<div class="content" style="{{ past_post_background | default: page.background }};">
+<div class="content" style="{{ past_post_background | default: page.background }}; color:{{ past_post_colour | default: page.colour }}">
 <h2>past</h2>
 </div>
 

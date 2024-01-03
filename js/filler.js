@@ -8,8 +8,6 @@ window.onload = function () {
         var backgroundColor = window.getComputedStyle(post).backgroundColor;
         var backgroundImage = window.getComputedStyle(post).backgroundImage;
 
-        console.log(`color: ${backgroundColor}, image: ${backgroundImage}`);
-
         if (previousBackground && previousBackground !== backgroundColor) {
             var filler = document.createElement('div');
             filler.className = 'filler';

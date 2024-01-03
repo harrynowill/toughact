@@ -171,7 +171,7 @@ footer {
     overflow: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     max-width: 259px;
     background: #d266d2;
