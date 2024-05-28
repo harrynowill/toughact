@@ -13,7 +13,7 @@ lineup: [
     "DJ Spotify Playlist",
     "The Tough Act Residents Association",
 ]
-date:  2023-08-25 23:59:00
+date:  2023-08-25T23:59:00+0100
 location: "the white hotel"
 image: ["/img/pride-pub.webp", "/img/shame-club.webp"]
 background: "background-image: linear-gradient(to right,#30ace9 50%, #a846a7 50%)"
