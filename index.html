@@ -1,6 +1,6 @@
 ---
 layout: default
-one-liner: "IT'S A PHASE BUT THAT DOESN'T MEAN IT'S NOT REAL"
+one-liner: "IT WAS BETTER TO BURN THAN TO DISAPPEAR"
 emoji: "💅"
 background: "background-image: linear-gradient(to right,#30ace9 50%, #a846a7 50%)"
 colour: "white"
@@ -33,7 +33,7 @@ colour: "white"
 {% endfor %}
 
 <div class="content" style="{{site.posts.first.background | default: page.background}}; color:{{site.posts.first.colour | default: page.colour}}">
-    {% include merch.html %}
+    {% include artists.html %}
     {% include music.html %}
 </div>
 
@@ -68,10 +68,6 @@ colour: "white"
     {% endif %} 
 {% endfor %}
 
-
-<div class="content" style="{{ past_post_background | default: page.background }}; color:{{ past_post_colour | default: page.colour }}">
-<h2>past</h2>
-</div>
 
 <!-- post the past posts -->
 {% for post in site.posts %}
